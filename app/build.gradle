@@ -1,7 +1,9 @@
 apply plugin: 'android'
+apply plugin: 'com.android.application'
+apply plugin: 'com.android.databinding'
 
 android {
-    compileSdkVersion 20
+    compileSdkVersion 22
     buildToolsVersion "20.0.0"
 
     defaultConfig {
@@ -19,4 +21,5 @@ android {
 }
 
 dependencies {
+    compile 'me.tatarka:bindingcollectionadapter:0.10'
 }

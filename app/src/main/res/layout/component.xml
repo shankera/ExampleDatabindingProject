@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:example="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="viewModel" type="com.example.app.viewmodels.ComponentViewModel"/>
+    </data>
+    <LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <ListView
+                    android:id="@+id/example_data_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    example:items="@{viewModel.dataViewModels}"
+                    example:itemView="@{viewModel.dataView}">
+                </ListView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

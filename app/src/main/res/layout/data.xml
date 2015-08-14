@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="dataItem" type="com.example.app.viewmodels.DataViewModel"/>
+    </data>
+    <LinearLayout>
+        <TextView
+            android:id="@+id/datum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{dataItem.datum}"/>
+    </LinearLayout>
+</layout>
