@@ -5,14 +5,12 @@
     <data>
         <variable name="viewModel" type="com.example.app.viewmodels.MainViewModel"/>
     </data>
-    <ScrollView>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <include
-                android:id="@+id/main_component"
-                layout="@layout/component"
-                bind:viewModel="@{viewModel.componentViewModel}"/>
-        </LinearLayout>
-    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/main_component"
+            layout="@layout/component"
+            bind:viewModel="@{viewModel.componentViewModel}"/>
+    </LinearLayout>
 </layout>

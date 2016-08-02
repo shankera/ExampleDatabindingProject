@@ -15,7 +15,6 @@ public class MainViewModel extends ViewModel{
         super();
     }
     public MainViewModel setData(ArrayList<String> data){
-
         return this;
     }
 
